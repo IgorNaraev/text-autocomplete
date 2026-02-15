@@ -177,7 +177,7 @@ if __name__ == '__main__':
     
     tokenizer, train_loader, val_loader, test_loader = create_dataloaders(
         'data/train.csv', 'data/val.csv', 'data/test.csv',
-        batch_size=128, min_freq=5
+        batch_size=64, min_freq=5
     )
     
     model = LSTMModel(
